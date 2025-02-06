@@ -10,5 +10,7 @@ grim -g "$(slurp -c '#00000000')" "$FULL_PATH"
 
 wl-copy < "$FULL_PATH"
 
+paplay /usr/share/sounds/freedesktop/stereo/camera-shutter.oga &
+
 notify-send "Capture d'écran" "Enregistrée dans $FULL_PATH et copier dans le presse-papier"
 
